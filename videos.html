@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Prevención de Drogas - Videos Informativos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }   
+        h1 {
+            color: #333;
+        }
+        .video-box {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        .video-box video {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .video-box p {
+            margin: 10px 0 0;
+            font-size: 18px;
+            color: #666;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+            animation: lightning 1s infinite;
+        }
+        @keyframes lightning {
+            0% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); }
+            50% { box-shadow: 0 0 25px rgba(255, 255, 255, 0.9); }
+            100% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Videos Informativos</h1>
+
+    <div class="video-box">
+        <video controls>
+            <source src="video/Drogas_Tipos_y_clasificación_(1).mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+        <p>Video en Español</p>
+    </div>
+
+    <div class="video-box">
+        <video controls>
+            <source src="video/English_lesson_B2_Vocabulary_we_use_to_talk_about_drugs_palabras_en_ingles.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+        <p>Video en Inglés</p>
+    </div>
+
+    <div class="button-container">
+        <a href="index.html" class="button">Regresar al Menú Principal</a>
+    </div>
+
+</div>
+
+</body>
+</html>

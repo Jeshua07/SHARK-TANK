@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Prevención de Drogas - Tipos de Drogas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .card {
+            width: 45%;
+            margin: 20px 0;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+            text-align: left;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .card img {
+            width: 100%;
+            border-bottom: 4px solid #007BFF;
+        }
+        .card-content {
+            padding: 15px 0;
+        }
+        .card-content h2 {
+            margin: 0 0 10px;
+        }
+        .card-content p {
+            margin: 0;
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+        .button-container {
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+            box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007BFF, 0 0 40px #007BFF;
+        }
+        .btn::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%) rotate(45deg);
+            transition: width 0.3s ease, height 0.3s ease;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .btn:hover::before {
+            width: 0;
+            height: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Tipos de Drogas</h1>
+    <p>Descubre los diferentes tipos de drogas, sus características y cómo afectan al cuerpo. Cada tipo de droga tiene efectos únicos y riesgos asociados.</p>
+    
+    <div class="card-container">
+        <div class="card">
+            <img src="img/drogas estimulantes.jpeg" alt="Drogas Estimulantes">
+            <div class="card-content">
+                <h2>Drogas Estimulantes</h2>
+                <p>Las drogas estimulantes, como la cocaína y las anfetaminas, aumentan la actividad del sistema nervioso central. Pueden mejorar temporalmente la concentración y la energía, pero también pueden causar ansiedad, paranoia y problemas cardíacos.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/drogas depresoras.jpeg" alt="Drogas Depresoras">
+            <div class="card-content">
+                <h2>Drogas Depresoras</h2>
+                <p>Las drogas depresoras, como el alcohol y los opiáceos, ralentizan la actividad del sistema nervioso central. Esto puede llevar a una sensación de relajación, pero también puede causar problemas de coordinación, somnolencia y riesgo de sobredosis.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/drogas alucinogenas.jpeg" alt="Drogas Alucinógenas">
+            <div class="card-content">
+                <h2>Drogas Alucinógenas</h2>
+                <p>Las drogas alucinógenas, como el LSD y los hongos alucinógenos, alteran la percepción de la realidad. Pueden causar alucinaciones y cambios en el estado de ánimo, pero también pueden llevar a episodios de ansiedad y paranoia.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/drogas inhalantes.jpeg" alt="Drogas Inhalantes">
+            <div class="card-content">
+                <h2>Drogas Inhalantes</h2>
+                <p>Las drogas inhalantes, como los solventes y gases, se inhalan para obtener efectos eufóricos. Estos productos pueden causar daño a los pulmones y al sistema nervioso central, así como riesgo de muerte súbita.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="index.html" class="btn">Regresar al Menú Principal</a>
+    </div>
+</div>
+
+</body>
+</html>

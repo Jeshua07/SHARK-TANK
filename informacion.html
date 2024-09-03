@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Prevención de Drogas - Información</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+        .info-section {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .info-section img {
+            max-width: 150px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .info-section.reverse {
+            flex-direction: row-reverse;
+        }
+        .info-section.reverse img {
+            margin-right: 0;
+            margin-left: 20px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+            box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007BFF, 0 0 40px #007BFF;
+        }
+        .btn::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%) rotate(45deg);
+            transition: width 0.3s ease, height 0.3s ease;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .btn:hover::before {
+            width: 0;
+            height: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Información sobre Drogas</h1>
+    <div class="info-section">
+        <img src="img/drogas.jpeg" alt="Drogas">
+        <p>Las drogas son sustancias que pueden alterar el funcionamiento del cuerpo y la mente. El uso de drogas puede llevar a la dependencia, y su abuso puede causar graves problemas de salud.</p>
+    </div>
+    <div class="info-section reverse">
+        <img src="img/impacto causado en la salud por las drogas.jpeg" alt="Impacto en la Salud">
+        <p>El impacto de las drogas en la salud es significativo. Pueden afectar diferentes órganos y sistemas del cuerpo, causando desde problemas respiratorios hasta enfermedades cardíacas y hepáticas.</p>
+    </div>
+    <div class="info-section">
+        <img src="img/impacto causado en la sociedad por las drogas.jpeg" alt="Impacto en la Sociedad">
+        <p>El uso de drogas no solo afecta al individuo, sino también a la sociedad en general. Puede contribuir al aumento de la violencia, la criminalidad, y a problemas económicos y sociales.</p>
+    </div>
+    <div class="info-section reverse">
+        <img src="img/recuperacion.jpeg" alt="Recuperación">
+        <p>La recuperación de la adicción a las drogas es un proceso que requiere tiempo y apoyo. Existen programas de rehabilitación y terapias que ayudan a las personas a superar su dependencia.</p>
+    </div>
+    <div class="button-container">
+        <a href="index.html" class="btn">Regresar al Menú Principal</a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Drug Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            padding: 14px 20px;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-right: 1px solid #ddd;
+        }
+        nav a:last-child {
+            border-right: none;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .content {
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .tab {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Drug Information</h1>
+    </header>
+    <nav>
+        <a href="#tab1" onclick="showTab('tab1')">What Are Drugs?</a>
+        <a href="#tab2" onclick="showTab('tab2')">Effects of Drugs</a>
+        <a href="#tab3" onclick="showTab('tab3')">Prevention</a>
+        <a href="#tab4" onclick="showTab('tab4')">Help</a>
+    </nav>
+    <div class="content">
+        <div id="tab1" class="tab" bgcolor="#e3f2fd">
+            <h2>What Are Drugs?</h2>
+            <p>Drugs are substances that, when introduced into the body, can alter one or more of its functions. These substances can be natural or synthetic, legal or illegal, and can have various effects on the human body.</p>
+        </div>
+        <div id="tab2" class="tab" bgcolor="#e8f5e9">
+            <h2>Effects of Drugs</h2>
+            <p>Drugs can have diverse effects on the body and mind, ranging from temporary euphoria to permanent damage. Short-term effects might include altered perception, mood swings, and impaired judgment, while long-term use can lead to addiction, mental health issues, and physical harm.</p>
+        </div>
+        <div id="tab3" class="tab" bgcolor="#fff3e0">
+            <h2>Prevention</h2>
+            <p>The best way to prevent drug use is to be informed, develop skills to refuse offers, and maintain a healthy lifestyle. Education and open communication with family and peers are crucial in preventing substance abuse.</p>
+        </div>
+        <div id="tab4" class="tab" bgcolor="#ffebee">
+            <h2>Help</h2>
+            <p>If you or someone you know needs help with drug use, there are resources and support lines available. Seeking help early can prevent long-term damage and assist in recovery. Don't hesitate to reach out to professionals, support groups, or helplines.</p>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabId) {
+            var tabs = document.getElementsByClassName('tab');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = 'none';
+            }
+            document.getElementById(tabId).style.display = 'block';
+        }
+        // Show the first tab by default
+        showTab('tab1');
+    </script>
+</body>
+</html>

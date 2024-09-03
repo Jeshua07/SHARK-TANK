@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Prevención de Drogas - Prevención</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .info-card {
+            display: inline-block;
+            width: 300px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .info-card img {
+            width: 100%;
+            border-bottom: 4px solid #007BFF;
+        }
+        .info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .info-card p {
+            padding: 15px;
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+        .button-container {
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+            box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007BFF, 0 0 40px #007BFF;
+        }
+        .btn::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%) rotate(45deg);
+            transition: width 0.3s ease, height 0.3s ease;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .btn:hover::before {
+            width: 0;
+            height: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Prevención del Uso de Drogas</h1>
+    <div class="info-card">
+        <img src="img/educacion.jpeg" alt="Educación">
+        <p>La educación es una herramienta clave en la prevención del uso de drogas. Proporcionar información precisa y accesible ayuda a las personas a tomar decisiones informadas y a comprender los riesgos asociados con el uso de sustancias.</p>
+    </div>
+    <div class="info-card">
+        <img src="img/habitos saludables.png" alt="Hábitos Saludables">
+        <p>Adoptar hábitos saludables, como una dieta equilibrada y actividad física regular, puede reducir el riesgo de uso de drogas. Estos hábitos contribuyen a una vida saludable y reducen la vulnerabilidad a la adicción.</p>
+    </div>
+    <div class="info-card">
+        <img src="img/apoyo familiar.jpeg" alt="Apoyo Familiar">
+        <p>El apoyo familiar es fundamental en la prevención del uso de drogas. Un entorno familiar positivo y el apoyo emocional pueden ayudar a los individuos a resistir la presión para consumir sustancias.</p>
+    </div>
+    <div class="info-card">
+        <img src="img/actividades alternativas.png" alt="Actividades Alternativas">
+        <p>Participar en actividades recreativas y ocupacionales puede mantener a las personas ocupadas y distraídas de la tentación de usar drogas. Las actividades como deportes, arte y voluntariado proporcionan un sentido de propósito y pertenencia.</p>
+    </div>
+    <div class="button-container">
+        <a href="index.html" class="btn">Regresar al Menú Principal</a>
+    </div>
+</div>
+
+</body>
+</html>
